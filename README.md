@@ -9,7 +9,8 @@ This application consists total three views.
 #### Code Logic
 In **FirstViewController.swift** a global variable 'name' is defined to use the name in the LastViewController.
 ```swift
-//The class has only two fields and one method. the user will enter name and on pressing the button the control will go to ViewController.swift
+/*The class has only two fields and one method. the user will enter 
+name and on pressing the button the control will go to ViewController.swift*/
 class FirstViewController: UIViewController {
     @IBOutlet weak var enterName: UITextField!
     @IBOutlet weak var btnStart: UIButton!
@@ -19,13 +20,17 @@ class FirstViewController: UIViewController {
 In **ViewController.swift** three arrays were designed. First contains all the questions. Second is a 2D array which contains four options for every  single question. The third array contains the right answer index fo the second array.
 
 ```swift
-//This function is used to randomly select 5 question out of 10 and add the index to 'ques' array
+/*This function is used to randomly select 5 question 
+out of 10 and add the index to 'ques' array*/
 func question_selection(){}
 
-//this function contains the functionality to display next question to the user
+/*this function contains the functionality to 
+display next question to the user*/
 func NextQuestion(quesNumber: Int) {}
 
-//This is IBAction which is connected to all the four answers which are show to user. On clicking any button it checks if the tag of button matches with answers index
+/*This is IBAction which is connected to all the four answers 
+which are show to user. On clicking any button it checks if the tag of
+button matches with answers index*/
 func btnpress0(){}
 ```
 In **LastViewController.swift** a logic is defined which will show different messages to user based on score
